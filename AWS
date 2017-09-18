@@ -1,0 +1,64 @@
+AWS Services:
+
+AWS global infrastructure:
+--Regions 
+  Where AWS resources exist
+  each regions => 2 or more availabity zones
+ 
+--Availability zone 
+  data centeres => each is away from other so they'll be independedent of each other
+  (collection/ logical data center)
+
+--edge locations 
+  CDN(Content Delivery Network) for cloud front
+  (from where we are accessing the cloud/ download from localhost instead of cloud if already cached)
+  (Way to cache the large media objects in cloud)
+  (point of presence of cloudfront)
+
+
+
+Netweorking and Content delivery
+--VPC (*****)
+  virtual private cloud, virtual datacenter => where we deploy our assets
+
+--Route 53
+  Amazon DNS service (ip and name relation)
+  Register  
+  53 DNS port
+  66 --
+
+--CloudFront
+  Part of CDN
+  Has bunch of edge locations (large media files=> cache)
+  - Secure Content (Network and application level protection)
+  - AWS Shield standard(protected)
+  -High Performance
+  -Cost Effective
+  -Easy to use
+  -EC2 and S3 use
+
+  
+--Direct Connect
+  Connect physical datacenter to AWS (using dedicated phone lines)
+  For reliable data connection and security
+
+
+
+EC2 (Elastic compute cloud)
+Virtual machines in cloud runs on AWS
+--EC2 Container Service:(-)
+  EC2 service => Highly performance and manageable container service => contains docker containers=> allows you to run applications on Manage clusters on Amazon EC2 instances(Virtual machines, we don't need to create manage clusters in our local)
+
+--Elastic Beanstalk(**)
+  Allows you to deploy our application even when we don't have much knowledge about the AWS 
+
+--lambda(****)
+  Access the Virtual machines using this/ access to OS
+  servlets => upload your code and your code will respond to the events
+
+-LightSail 
+  Out of the box cloud 
+
+--------------------------------
+
+
